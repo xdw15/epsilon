@@ -17,3 +17,18 @@ data_2=np.random.normal(0,1,[1000000,1])
 #plt.hist(data,bins=900)
 
 plt.scatter(data_1,data_2)
+
+
+## thursday december 5 is the date that appears
+## in the screen of the trading floor in a pic
+## featured in optiver kaggle competition
+import datetime as dt
+
+i=10
+y=2023
+while i!=3:
+    i=dt.datetime(y,12,5).weekday()
+    y-=1    
+    
+print(y)
+    
